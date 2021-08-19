@@ -1,0 +1,46 @@
+.footer {
+    padding: 150px 0;
+    background-color: $gray-dark;
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 120px;
+    }
+    &-links {
+        list-style: none;
+    }
+    &-desc {
+        margin-bottom: 40px;
+    }
+    &-heading {
+        color: white;
+        margin-top: 7px;
+        margin-bottom: 18px;
+        font-weight: 600;
+        opacity: 0.8;
+    }
+    &-item {
+        margin-bottom: 25px;
+    }
+    &-link {
+        color: $gray-light;
+    }
+    @include maxW(1023px) {
+        padding: 60px 0;
+        &-main {
+            grid-template-columns: 1fr;
+        }
+        &-column:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.social-item {
+    cursor: pointer;
+    color: $gray-light;
+    transition: color 0.2s linear;
+    &:hover {
+        color: white;
+    }
+}

@@ -1,0 +1,58 @@
+.contact {
+    padding: 140px 0;
+    background: url(../image/contact-bg.png);
+    &-header {
+        max-width: 570px;
+        margin: 0 auto 100px;
+        text-align: center;
+        color: white;
+    }
+    &-heading {
+        font-weight: 400;
+        color: white;
+    }
+    &-input {
+        padding: 20px 30px;
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(white, 0.5);
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-color: transparent;
+        transition: border 0.3s linear;
+        &::-webkit-input-placeholder {
+            color: white;
+        }
+        &::-moz-input-placeholder {
+            color: white;
+        }
+        &:focus {
+            border-color: white;
+        }
+    }
+    &-area {
+        padding: 20px 30px;
+        min-height: 100px;
+        width: 100%;
+        line-height: 1.55;
+        resize: none;
+        border: 1px solid rgba(white, 0.5);
+        border-radius: 4px;
+        display: block;
+        margin-bottom: 30px;
+        background-color: transparent;
+        transition: border 0.3s linear;
+        &::-webkit-input-placeholder {
+            color: white;
+        }
+        &::-moz-input-placeholder {
+            color: white;
+        }
+        &:focus {
+            border-color: white;
+        }
+    }
+    @include maxW(767px) {
+        padding: 80px 0;
+    }
+}

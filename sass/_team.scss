@@ -1,0 +1,48 @@
+.team {
+    padding: 150px 0;
+    background-color: $gray-lighter;
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-content {
+        max-width: 370px;
+        width: 100%;
+        flex-shrink: 0;
+    }
+    &-images {
+        width: 100%;
+        max-width: 670px;
+        display: flex;
+        gap: 0 30px;
+        align-items: center;
+    }
+    &-heading {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: lineH(56, 36);
+        margin-bottom: 30px;
+    }
+    &-desc {
+        font-weight: 18px;
+        line-height: lineH(34, 18);
+        margin-bottom: 60px;
+    }
+    &-img2 {
+        margin-top: 30px;
+        margin-left: auto;
+    }
+    @include maxW(1023px) {
+        padding: 100px 0;
+    }
+    @include maxW(767px) {
+        padding: 40px 0;
+        &-main {
+            display: block;
+        }
+        &-content {
+            margin-bottom: 30px;
+        }
+    }
+}
